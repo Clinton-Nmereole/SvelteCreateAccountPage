@@ -12,3 +12,4 @@ vite.config.ts.timestamp-*
 ./prisma/*.sql
 ./prisma/*.db
 ./prisma/*database.sqlite
+./prisma
