@@ -1,21 +1,21 @@
-<section class="py-24 lg:py-28 bg-surface-900 h-full w-full overflow-hidden flex justify-center items-center">
+<section class="py-24 lg:py-28 bg-surface-900 h-full w-full overflow-hidden">
      <div class="container px-4 mx-auto h-40">
-          <form class="mx-auto max-w-3xl h-40" method="POST">
-               <h2 class="text-6xl tracking-tight font-Satoshi py-4">Login</h2>
+          <form class="mx-auto max-w-3xl h-40 mt-20" method="POST">
+               <h2 class="text-6xl tracking-tight font-Satoshi py-7">Login</h2>
                
-               <div class="grid grid-flow-col grid-cols-2 grid-rows-1 min-h-fit py-1">
-                    <div class="md:w-4/5 w-full py-1 px-1">
+               <div class="grid grid-flow-row grid-cols-1 grid-rows-1 min-h-fit py-1">
+                    <div class="md:w-4/5 w-[70%] py-5 px-1 ml-3">
                          <label for="Username">Username</label>
                          <input type="text" placeholder="Username" class="rounded-lg outline-none tracking-tight
                          text-gray-700 w-full scale-105" id="Username" name="Username">
                     </div>
-                    <div class="md:w-4/5 w-full py-1 px-1">
+                    <div class="md:w-4/5 w-[70%] py-5 px-1 ml-3">
                          <label for="Password">Password</label>
                          <input type="password" placeholder="Password" class="rounded-lg outline-none tracking-tight
                          text-gray-700 w-full scale-105" id="Password" name="Password">
                     </div>
                </div>
-               <div class="w-full py-4">
+               <div class="w-[93%] py-8">
                     <button type="submit" class="w-[90%] bg-secondary-500 hover:bg-secondary-700 rounded-lg font-bold inline-block px-5
                     py-4"
                     >Login</button>

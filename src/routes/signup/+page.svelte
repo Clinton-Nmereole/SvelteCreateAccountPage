@@ -1,8 +1,8 @@
 <script lang="ts">
-	//import { error } from '@sveltejs/kit';
-     //import type { PageData } from './$types';
-     //export let  data: PageData;
-
+     let Username: string;
+     let Password: string;
+     let Email: string;
+     let ConfirmPassword: string;
 </script>
 
 
@@ -14,20 +14,23 @@
                <div class="grid grid-flow-row grid-cols-2 grid-rows-2 min-h-fit py-10">
                     <div class="md:w-4/5 w-full py-5 px-1">
                          <input type="text" placeholder="Username" class="rounded-lg outline-none tracking-tight
-                         text-gray-700 w-full scale-105" id="Username" name="Username">
+                         text-gray-700 w-full scale-105" id="Username" name="Username" bind:value={Username}>
                     </div>
                     <div class="md:w-4/5 w-full py-5 px-1">
                          <input type="email" placeholder="Email Address" class="rounded-lg outline-none tracking-tight
-                         text-gray-700 w-full scale-105" id="Email" name="Email">
+                         text-gray-700 w-full scale-105" id="Email" name="Email" bind:value={Email}>
                     </div>
                     <div class="md:w-4/5 w-full py-5 px-1">
                          <input type="password" placeholder="Password" class="rounded-lg outline-none tracking-tight
-                         text-gray-700 w-full scale-105" id="Password" name="Password">
+                         text-gray-700 w-full scale-105" id="Password" name="Password" bind:value={Password}>
                     </div>
                     <div class="md:w-4/5 w-full py-5 px-1">
                          <input type="password" placeholder="Confirm Password" class="rounded-lg outline-none tracking-tight
-                         text-gray-700 w-full scale-105" id="ConfirmPassword" name="ConfirmPassword">
+                         text-gray-700 w-full scale-105" id="ConfirmPassword" name="ConfirmPassword" bind:value={ConfirmPassword}>
                     </div>
+                    {#if Password !== ConfirmPassword}
+                         <p class="text-red-300">Passwords do not match</p>
+                    {/if}
                </div>
                <div class="py-4">
                     <label class="mx-auto  font-Satoshi text-lg"><input type="checkbox" id="agree" class="cursor-pointer"> I agree to
