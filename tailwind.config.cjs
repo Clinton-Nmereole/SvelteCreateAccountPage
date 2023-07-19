@@ -22,7 +22,7 @@ module.exports = {
 					'Satoshi-Black',
 					'Satoshi-Variable'
 				],
-				AlNevrada: ['Al-Nevrada']
+				LucySaidOk: ['LucySaidOk']
 			}
 		}
 	},
