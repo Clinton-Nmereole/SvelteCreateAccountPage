@@ -2,7 +2,7 @@
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center">
-		<h2 class="h2">Welcome to NewsBites.</h2>
+		<h2 class="h2 font-AlNevrada">Welcome to NewsBites.</h2>
 		<!-- Animated Logo -->
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
